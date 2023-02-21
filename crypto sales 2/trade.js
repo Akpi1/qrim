@@ -64,7 +64,7 @@ sendButton.addEventListener('click', function(event){
 
       
      
-       let win = window.open(`https://wa.me/${08108098671}?text= Hi Qrim, I want to ${tradeoption}%0a%0a Token: ${choice}%0a Usd Amount: $${dollarAmount}%0a Naira amount:${nairaAmount}%0a Bank name: ${bankName}%0a Account name: ${accountName}%0a Account number: ${accountNumber}`)
+       let win = window.open(`https://wa.me/${+2348108098671}?text= Hi Qrim, I want to ${tradeoption}%0a%0a Token: ${choice}%0a Usd Amount: $${dollarAmount}%0a Naira amount:${nairaAmount}%0a Bank name: ${bankName}%0a Account name: ${accountName}%0a Account number: ${accountNumber}`)
           
 
 })
