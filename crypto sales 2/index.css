@@ -4,248 +4,266 @@
     padding: 0;
     overflow-x: hidden;
 }
-body{
-    width: 100vw;
-    background-color:#27292f;
-    position: relative;
-    overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
+@media  screen and (max-width:480px) {
+    body{
+        width: 100vw;
+        background-color:#27292f;
+        position: relative;
+        overflow-x: hidden;
+        font-family: 'Montserrat', sans-serif;
+        
     
+    }
+    /* ================== Header =================== */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:4rem;
+    }
+    .headerContainer{
+        display: flex;
+        justify-content: space-between ;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+    .qrim{
+        display: inline-block;
+        color:white;
+        font-family:monospace;
+        font-size:1rem;
+    }
+    .qrim h2{
+        display: inline;
+    }
+    .Q{
+       font-weight: bold;
+       color: #f3ef52;
+       font-size: 1.5em;
+       font-style: normal;
+    }
 
-}
-/* ================== Header =================== */
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:4rem;
-}
-.headerContainer{
-    display: flex;
-    justify-content: space-between ;
-}
-.hamburger{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-}
-.qrim{
-    display: inline-block;
-    color:white;
-    font-family:monospace;
-    font-size:1rem;
-}
-.qrim h2{
-    display: inline;
-}
-.Q{
-   font-weight: bold;
-   color: #f3ef52;
-   font-size: 1.5em;
-   font-style: normal;
-}
-.div1 , .div2 , .div3{
-    width: 2rem;
-    height: 3px;
-    display: inline-block;
-    background-color: white;
-}
-/* ================ small navbar =================== */
-.sdNavContainer{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 4rem;
-    flex-direction:column; 
-    font-size: 25px;
-    gap: 1rem;
-    height: 100%;
-    border:0 1px solid #f3ef52;
-    box-shadow: 0 0 7px #f3ef52;
-    background-color: #27292f;
-    /* font-family: monospace; */
-    display: none;
-   
-}
-.sdNav{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 20rem;
-    position: absolute;
-    color: white;
-}
-.socialIcon{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    gap: 5px;
-    height: 3rem;
-    width: 15rem;
-    font-size: 30px;
-    margin-top: 20px;
-}
-.socialIcon h3{
-    background-color: red;
-    width: 3rem;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-   
-}
-.socials{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
-/* ======================================================== */
-/* ========================================== */
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    width: 88%;
-}
-section{
-    display: flex;
-}
-h1{
-    font-size: 27px;
-    margin-top: 2rem;
-    font-family: monospace; 
-    color: white;
-    font-weight: bold;
-}
-.welcomeParagraph{
-    height: auto;
-    overflow-y: hidden;
-}
-/* =================================================== */
-#livePrices{
-    margin-top: 3rem;
-    border-top: 2px solid #f3ef52;
-    border-radius: 19px 19px 0 0;
-    background-color: #141518;
-    height: 32rem;
-}
-.livepriceContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    background-image: url(ui/images\ \(4\).jpeg);
-}
-.bitcoin , .etherum , .bnb{
-    width:100%;
-    height: 8rem;
-    background-color: black;
-    position: relative;
-}
-/* .bitcoin{
-    background-color: rgb(225,184,203);
-}
-.etherum{
-    background-color:rgb(102,212,159);
-}
-.bnb{
-    background-color:rgb(157,186,223);
-} */
-button{
-    background-color: #f3ef52;
-    border: none;
-    width: 10rem;
-    height: 3.5rem;
-    font-weight: bold;
-    font-size: 19px;
-    margin-top: 3rem;
-    cursor: pointer;
-}
-
-/* ======================= rates========================= */
-.bitcoin h1 , .bitcoin h3 , .etherum h1 , .etherum h3 ,.bnb h1 , .bnb h3{
-    color: black;
-    margin: 0;
-    font-family: monospace;
-    z-index: 1000;
-    position: relative;
-}
-.lWrapper{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    align-items:space-around;
-    justify-content: center;
-    padding-left:2rem;
-    gap: 1rem;
-    border-bottom:4px dashed#f3ef522e;
-    position:relative;
-    background-color: white;
-
-}
-
-
-.llogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #27292f;
-    width: 3rem;
-    height: 3rem;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 25px;
-}
-.Et{
-    background-color: rgb(33, 145, 91);
-}
-.Bn{
-    background-color:rgb(115, 145, 184);
-}
-
-.price__{
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.Bc h1{
-    color: white;
-}
-.Bc{
-    background-color:blue;
-}
-.Et h1{
-    color:rgb(102,212,159);
-}
-.Bn h1{
-    color:rgb(157,186,223);
-}
-.liverates{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bDscp{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    gap:2rem;
-    width:100%;
-}
-
-
-/* =================================================== */
-@media screen and (min-width:1600px){
-   .bDscp{
-       gap: 32rem;
+    /* ================ small navbar =================== */
+    .sdNavContainer{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 4rem;
+        flex-direction:column; 
+        font-size: 25px;
+        gap: 1rem;
+        height: 100%;
+        border:0 1px solid #f3ef52;
+        box-shadow: 0 0 7px #f3ef52;
+        background-color: #27292f;
+        /* font-family: monospace; */
+        display: none;
+       
+    }
+    .sdNav{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 20rem;
+        position: absolute;
+        color: white;
+    }
+    .socialIcon{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        gap: 5px;
+        height: 3rem;
+        width: 15rem;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .socialIcon h3{
+        background-color: red;
+        width: 3rem;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+       
+    }
+    .socials{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ======================================================== */
+    /* ========================================== */
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 88%;
+    }
+    section{
+        display: flex;
+    }
+    h1{
+        font-size: 27px;
+        margin-top: 2rem;
+        font-family: monospace; 
+        color: white;
+        font-weight: bold;
+    }
+    .welcomeParagraph{
+        height: 14rem;
+        overflow-y: hidden;
+    }
+    /* =================================================== */
+    #livePrices{
+        margin-top: 3rem;
+        border-top: 2px solid #f3ef52;
+        border-radius: 19px 19px 0 0;
+        background-color: #141518;
+        height: 32rem;
+    }
+    .livepriceContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        background-image: url(ui/images\ \(4\).jpeg);
+    }
+    .bitcoin , .etherum , .bnb{
+        width:100%;
+        height: 8rem;
+        position: relative;
+    }
+    /* .bitcoin{
+        background-color: rgb(225,184,203);
+    }
+    .etherum{
+        background-color:rgb(102,212,159);
+    }
+    .bnb{
+        background-color:rgb(157,186,223);
+    } */
+    button{
+        background-color: #f3ef52;
+        border: none;
+        width: 10rem;
+        height: 3.5rem;
+        font-weight: bold;
+        font-size: 19px;
+        margin-top: 3rem;
+        cursor: pointer;
+    }
+    
+    /* ======================= rates========================= */
+    .bitcoin h1 , .bitcoin h3 , .etherum h1 , .etherum h3 ,.bnb h1 , .bnb h3{
+        color: black;
+        margin: 0;
+        font-family: monospace;
+        z-index: 1000;
+        position: relative;
+    }
+    .lWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom:4px #f3ef522e;
+        position:relative;
+        background-color: white;
+    
+    }
+    
+    /* .bitcoin{
+        position: relative;
+        background-image: url(ui/images\ \(4\).jpeg);
+    }
+    .etherum{
+        background-image:url(ui/download.jpeg);
+    }
+    .bnb{
+        background-image: url(ui/images\ \(2\).jpeg);
+    } */
+    .llogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #27292f;
+        width: 3rem;
+        height: 3rem;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 25px;
+    }
+    .Et{
+        background-color: rgb(33, 145, 91);
+    }
+    .Bn{
+        background-color:rgb(115, 145, 184);
+    }
+    
+    .price__{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .Bc h1{
+        color: white;
+    }
+    .Bc{
+        background-color:blue;
+    }
+    .Et h1{
+        color:rgb(102,212,159);
+    }
+    .Bn h1{
+        color:rgb(157,186,223);
+    }
+    .liverates{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bDscp{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0 9px;
+    }
+    
+    /* ======================================================== */
+    .fa-bitcoin-sign{
+        color: white;
+        font-size:3rem;
+    }
+    .fa-ethereum{
+        font-size: 3rem;
+    }
+    .fa-caret-up{
+        font-size: 3rem;
+        color: green;
+    }
+    iconify-icon{
+        font-size:3rem;
+    }
+    .fa-bars{
+        color:white;
+        font-size:1.6rem;
     }
 }
+
+
+/* =================================================== */
+
 
 @media screen and (max-height:900px){
    #livePrices{
@@ -253,18 +271,4 @@ button{
    } 
 }
 
-/* ============ icon styles ===================== */
-.fa-bitcoin-sign{
-    color: white;
-    font-size:3rem;
-}
-.fa-ethereum{
-    font-size: 3rem;
-}
-.fa-caret-up{
-    font-size: 3rem;
-    color: green;
-}
-iconify-icon{
-    font-size:3rem;
-}
+
