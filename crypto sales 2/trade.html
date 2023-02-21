@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade</title>
+    <link rel="stylesheet" href="trade.css">
+</head>
+<body>
+    
+    <section class="container">
+        <form action="">
+            <h1 class="introText">Make a trade</h1>
+            <div class="checkboxDiv">
+                <input type="checkbox" id="switch" class="checkbox">
+                <label for="switch" class="toggle">
+                    <p>SELL</p>
+                    <p>BUY</p>
+                    
+                </label>
+                <!-- <span class="arrowDown">⬇️</span> -->
+            </div>
+            <div id="selectCrypto" >
+                <label for="cryptoChoice">Select Crypto</label>
+                <select class='inputStyle' name="" id="cryptoChoice">
+                    <option value="Bitcoin">Bitcoin</option>   
+                    <option value="Etherum">Etherum</option>
+                    <option value="Bnb">BnB</option>
+                    <option value="Usdt">Usdt</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+         
+            <div id="selectCrypto" >
+                <label for="cryptoChoice">How much?</label>
+                <input class="inputStyle usdAmount" id="usdBox" type="number">
+                <i id="refresh">🔄</i><h1 class="rate">$1 = #<span id="rate2"></span></h1>
+                <h1 id="payed"></h1>
+                <h3 class="usdPlaceholder">USD</h3>
+            </div>
+            <div class="accountDetail">
+                <div class="accountDetailsWrapper">
+                    <label for="bankName">Bank name</label>
+                    <input class="accountStyle" id="bankName"  name="bankName" type="text">
+                    <label for="accountName">Account name</label>
+                    <input class="accountStyle name"  type="text" name="accountName" id="">
+                    <label for="accountNumber">Account number</label>
+                    <input class="accountStyle accountNumber" type="number" name="accountNumber" id="">
+                </div>
+            </div>
+            <button class="button" type="submit">CONTINUE</button>
+        </form>
+    </section>
+  <script src="trade.js"></script>  
+</body>
+</html>
