@@ -135,7 +135,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
         background-image: url(ui/images\ \(4\).jpeg);
     }
     .bitcoin , .etherum , .bnb{
