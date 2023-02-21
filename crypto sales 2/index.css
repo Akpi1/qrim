@@ -189,16 +189,7 @@ button{
 
 }
 
-/* .bitcoin{
-    position: relative;
-    background-image: url(ui/images\ \(4\).jpeg);
-}
-.etherum{
-    background-image:url(ui/download.jpeg);
-}
-.bnb{
-    background-image: url(ui/images\ \(2\).jpeg);
-} */
+
 .llogo{
     display: flex;
     align-items: center;
@@ -248,6 +239,11 @@ button{
 
 
 /* =================================================== */
+@media screen and (max-width:600px){
+   .bDscp{
+       gap: 12rem;
+    }
+}
 
 @media screen and (max-height:900px){
    #livePrices{
