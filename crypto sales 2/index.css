@@ -197,9 +197,9 @@
         align-items: center;
         justify-content: center;
         background-color: #27292f;
-        width: 3rem;
-        height: 3rem;
-        padding: 10px;
+        width: 2rem;
+        height: 2rem;
+        padding: 8px;
         border-radius: 50%;
         font-size: 25px;
     }
@@ -243,13 +243,13 @@
     /* ======================================================== */
     .fa-bitcoin-sign{
         color: white;
-        font-size:3rem;
+        font-size:2rem;
     }
     .fa-ethereum{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .fa-caret-up{
-        font-size: 3rem;
+        font-size: 2rem;
         color: green;
     }
     iconify-icon{
